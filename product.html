@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product App</title>
+</head>
+<body>
+
+    <div class="product_app mt-5">
+        
+            <legend>
+                <div class="icon"></div>
+            </legend>
+                <div class="form">
+                    <input type="text" placeholder="Product name" id="productName">
+                    <span></span>
+                    <input type="number" placeholder="Product price" id="productPrice">
+                    <span class="d-none text-danger priceSpan">The Dollar's Gone Up</span>
+                    <input type="text" placeholder="Product Category" id="productCategory">
+                    <span class="d-none text-danger catSpan">It's not a product</span>
+                    <input type="text" placeholder="Product Description" id="productDesc">
+                    <button id="productBtn">Add Product</button>
+                    <button style="display: none;" onclick="updateNow()" id="updateBtn">Update</button>
+                    
+                </div>
+        
+            
+        
+    </div>
+    <div class="d-flex justify-content-center m-5">
+        <input type="search" placeholder="search"  class="form-control w-25" onkeyup="searchProduct(this.value)">
+    </div>
+     
+
+     <!-- <div class="product_table"> -->
+        <table class="table table-dark table-striped">
+        <thead>
+            <th scope="col">
+                ID
+            </th>
+            <th scope="col">
+                Name
+            </th>
+            <th scope="col">
+                Price
+            </th>
+            <th scope="col">
+                Catecory
+            </th>
+            <th scope="col">
+                Description
+            </th>
+            <th scope="col">
+                
+            </th>
+            <th scope="col">
+            
+            </th>
+            
+        </thead>
+        <tbody id="addProduct" class="table table-dark table-striped">
+        
+        </tbody>
+    </table>
+    <!-- </div> -->
+    <script src="./js/product.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+
+
+
+
+
+</body>
+</html>
+
+
